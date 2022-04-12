@@ -5,7 +5,7 @@ This is the phase two of deploying WSO2 API Manager deployment with WSO2 Micro I
 ```
   - MySQL-5.7
   - 
-  - Postgres-10.5
+  - Postgres-10.19
   - Oracle-SE1-11.2
   - Oracle-SE2-12.1
   - SQLServer-SE-13.00

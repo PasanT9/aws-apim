@@ -303,21 +303,9 @@ Parameters:
 
 Mappings:
   WSO2AMIRegionMap:
-    ap-southeast-2:
-      CentOS7: ami-0211f0ecd0e693937
-      Ubuntu1804: ami-0fc37bfc486b80d6d
-    eu-west-1:
-      CentOS7: ami-08137d567f9e9413e
-      Ubuntu1804: ami-005de30fe41bbe8f3
     us-east-1:
       CentOS7: ami-09d4e63ccc46083c7
       Ubuntu1804: ami-02a2048d0e4afcd10
     us-east-2:
       CentOS7: ami-009ac95229cc07041
       Ubuntu1804: ami-0a1af21a7b34de8f7
-    us-west-1:
-      CentOS7: ami-0062ecf9cd0c8417d
-      Ubuntu1804: ami-02cfec9ab1330bcbb
-    us-west-2:
-      CentOS7: ami-0cbe0a37066de0538
-      Ubuntu1804: ami-0cc3da810abe655e0
