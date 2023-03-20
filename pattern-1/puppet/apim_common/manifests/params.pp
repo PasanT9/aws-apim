@@ -17,7 +17,7 @@
 class apim_common::params {
 
   $packages = ["unzip"]
-  $version = "4.1.0"
+  $version = "4.2.0"
 
   # Set the location the product packages should reside in (eg: "local" in the /files directory, "remote" in a remote location)
   $pack_location = "local"
@@ -49,22 +49,20 @@ class apim_common::params {
 
   # JDK Distributions
   # WSO2 TestGrid specific configuration Params
-  if $jdk_version == 'ORACLE_JDK8' {
-    $jdk_file_name = "jdk-8u311-linux-x64.tar.gz"
-    $jdk_name = "jdk1.8.0_311"
-  } elsif $jdk_version == 'CORRETTO_JDK8' {
-    $jdk_file_name = "amazon-corretto-8.322.06.2-linux-x64.tar.gz"
-    $jdk_name = "amazon-corretto-8.322.06.2-linux-x64"
-  } elsif $jdk_version == 'TEMURIN_JDK8' {
-    $jdk_file_name = "OpenJDK8U-jdk_x64_linux_hotspot_8u322b06.tar.gz"
-    $jdk_name = "jdk8u322-b06"
-  } elsif $jdk_version == 'CORRETTO_JDK11' {
-    $jdk_file_name = "amazon-corretto-11.0.14.10.1-linux-x64.tar.gz"
-    $jdk_name = "amazon-corretto-11.0.14.10.1-linux-x64"
+  if $jdk_version == 'CORRETTO_JDK11' {
+    $jdk_file_name = "amazon-corretto-11.0.18.10.1-linux-x64.tar.gz"
+    $jdk_name = "amazon-corretto-11.0.18.10.1-linux-x64"
   } elsif $jdk_version == 'TEMURIN_JDK11' {
-    $jdk_file_name = "OpenJDK11U-jdk_x64_linux_hotspot_11.0.14_9.tar.gz"
-    $jdk_name = "jdk-11.0.14_9"
+    $jdk_file_name = "OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz"
+    $jdk_name = "jdk-11.0.18_10"
+  } elsif $jdk_version == 'CORRETTO_JDK17' {
+    $jdk_file_name = "amazon-corretto-17.0.6.10.1-linux-x64.tar.gz"
+    $jdk_name = "amazon-corretto-17.0.6.10.1-linux-x64"
+  } elsif $jdk_version == 'TEMURIN_JDK17' {
+    $jdk_file_name = "OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz"
+    $jdk_name = "jdk-17.0.6_10"
   }
+
 
   $java_dir = "/opt"
   $java_symlink = "${java_dir}/java"
